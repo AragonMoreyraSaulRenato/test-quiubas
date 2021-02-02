@@ -1,0 +1,149 @@
+.container {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.main-container {
+	min-height: 100vh;
+	flex-direction: row;
+}
+
+.part-container {
+	padding: 100px 20px 0px 20px;
+	justify-content: flex-start;
+}
+
+.type-base {
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #25cc88;
+}
+
+.type-base:focus {
+	border-radius: 10px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #ffffff;
+}
+
+.input-base {
+	padding-left: 10px;
+	background: transparent;
+	color: #fff;
+}
+
+.input-helper {
+	margin-top: 5px;
+	font-size: 12px;
+	height: 12px;
+	align-self: flex-end;
+}
+
+.input-container {
+	min-width: 250px;
+	max-width: 350px;
+	display: flex;
+	flex-direction: column;
+	margin: 8px;
+}
+
+.input-label {
+	font-size: 14px;
+	margin-bottom: 3px;
+}
+
+.button-base {
+	width: 120px;
+	text-transform: uppercase;
+	align-self: flex-end;
+	height: 42px;
+	background: #25cc88;
+	color: #fff;
+	margin: 8px;
+}
+
+.button-delete {
+	background: #ee8181;
+	border-color: #ee8181;
+}
+
+.error-alert {
+	color: #ee8181;
+}
+
+.title {
+	text-transform: uppercase;
+	font-size: 24px;
+	color: #ffffff;
+	letter-spacing: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.subtitle {
+	font-size: 18px;
+	color: #ffffff;
+	letter-spacing: 2px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.notify {
+	height: 50px;
+	min-width: 200px;
+	border-radius: 10px;
+	visibility: hidden;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #ffffff;
+	transition: all ease 1s;
+	text-align: center;
+}
+
+.notify p {
+	transition: all ease 1s;
+	text-align: center;
+}
+
+.notify-success {
+	background-color: #25cc88;
+	visibility: visible;
+}
+
+.notify-error {
+	background-color: #ee8181;
+	visibility: visible;
+}
+
+.card {
+	padding: 5px;
+	margin: 8px;
+	border-radius: 10px;
+	background-color: #ffffff;
+	color: #02044a;
+	min-width: 250px;
+	max-width: 350px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.card-title {
+	font-weight: 500;
+}
+
+@media (max-width: 600px) {
+	.main-container {
+		flex-direction: column;
+	}
+
+	.part-container {
+		padding: 20px 20px 0px 20px;
+		justify-content: flex-start;
+		align-items: center;
+	}
+}
